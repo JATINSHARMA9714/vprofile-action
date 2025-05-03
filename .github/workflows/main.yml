@@ -28,9 +28,6 @@ jobs:
 
             - name: Setup SonarQube Scanner
               uses: warchant/setup-sonar-scanner@v1
-              with:
-                sonar-scanner-version: '4.8.0.2856'
-                sonar-scanner-home: ${{ github.workspace }}/sonar-scanner
 
             - name: SonarQube Scan
               run: sonar-scanner
